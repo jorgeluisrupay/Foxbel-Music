@@ -1,0 +1,23 @@
+
+
+<div class="row">
+    <h2 class="titleP"> TOP ROCK90S </h2>
+
+    <div *ngFor="let rock of rocks" 
+        class="col-md-3 col-sm-6">
+        <div class="card">
+            <div class="card-body">
+                <img src="{{rock.picture_medium}}" alt="{{rock.title}}" class="card-img-top">
+                <p class="card-text"> 
+                    Album: # {{rock.nb_album}}
+                </p>
+                <p class="card-text"> 
+                    Nombre: {{rock.name}}
+                </p>
+                
+                
+            </div>
+        </div>
+    </div>
+</div>
+

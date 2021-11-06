@@ -1,0 +1,36 @@
+
+     <div class="header">
+        <div class="buscar">
+            <input type="text" class="buscar__input" 
+            placeholder="Buscar" 
+            (keyup.enter)="buscar()"
+            #txtBuscar>
+        </div>
+        <div class="usuario " >
+          <i class="uil uil-user">&nbsp;&nbsp;&nbsp;&nbsp;<b>Jorge Luis</b></i>
+        </div>
+      </div>
+
+      <br>
+      <h2 class="res titleP">Resultados de busqueda</h2>
+      <hr>
+
+      <div class="row">
+        <div *ngFor="let musica of resultados" 
+            class="col-md-3 col-sm-6">
+            <div class="card">
+                <div class="card-body">
+                    <img src="{{musica.picture_medium}}" alt="{{musica.title}}" class="card-img-top">
+                    <p class="card-text"> 
+                        Album: # {{musica.nb_album}}
+                    </p>
+                    <p class="card-text"> 
+                        Nombre: {{musica.name}}
+                    </p>
+                    
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    

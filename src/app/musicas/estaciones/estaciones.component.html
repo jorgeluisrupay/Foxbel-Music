@@ -1,0 +1,22 @@
+
+
+<div class="row">
+    <h2 class="titleP"> LAS MEJORES ESTACIONES DE RADIO </h2>
+
+    <iframe src="https://giphy.com/embed/l4KhU4Foe4yMMYJzO" width="409" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+
+    <div *ngFor="let radio of radios" 
+        class="col-md-3 col-sm-6">
+        <div class="card">
+            <div class="card-body">
+                <img src="{{radio.picture_xl}}" alt="{{radio.title}}" class="card-img-top">
+                <p class="card-text"> 
+                    Nombre: {{radio.name}}
+                </p>
+                <p> Seguidores: {{radio.nb_fan}}</p>
+                
+                
+            </div>
+        </div>
+    </div>
+</div>

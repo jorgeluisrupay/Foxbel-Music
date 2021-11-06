@@ -1,0 +1,22 @@
+
+<div class="cont">
+    <h3 class="title">Mi Libreria</h3>
+
+<ul class="list-group" >
+    <li *ngFor = "let item of milibreriaMenu"
+        [routerLink]="[item.ruta]"
+        class="subtitles">
+       {{item.texto}}
+    </li>
+</ul>
+
+<h3 class="mt-4 title">Playlist</h3>
+
+<ul class="list-group">
+    <li *ngFor = "let item of playlistMenu"
+        [routerLink]="[item.ruta]"
+        class="subtitles">
+       {{item.texto}}
+    </li>
+</ul>
+</div>

@@ -1,0 +1,39 @@
+.header{
+    display: flex;
+    padding-top: 20px;
+}
+.usuario{
+    display: flex;
+    margin-left:400px ;
+    
+}
+.usuario i{
+    color: var(--color--boton);
+}
+.usuario b{
+    color: #000;
+}
+input[type=text] {
+    width: 400px;
+    padding-left: 10px;
+    border-radius: 20px;
+     border: 1px solid #2d9fd9;
+}
+.resultados h2{
+    margin: 15px 0;
+}
+.resultado__img{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 20px;
+}
+.album_name{
+    font-weight: bold;
+}
+.album_artist{
+    color: gray;
+    font-weight: 100;
+}
+.album img{
+    width: 150px;
+}

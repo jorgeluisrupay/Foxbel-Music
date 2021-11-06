@@ -1,0 +1,55 @@
+
+
+<div class="container">
+    <div class="banner">
+        <div class="portada">
+            <img src="https://m.media-amazon.com/images/I/61jNfu1D+HL._SY355_.jpg" alt="adele">
+        </div>
+        <div class="info" >
+            <h3 class="title">Adela 21</h3>
+            <div class="datos">
+                <p class="info__sm">Lo mejor de adele</p>
+                <p class="seguidores">321,123 seguidores</p>
+            </div>
+            <p class="desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio minima commodi iste,molestiae at reprehenderit doloremque similique ipsum, perferendis magni molestias nisi perspiciatisautem. Modi esse eligendi beatae iure inventore!</p>
+            <div class="botones">
+                <button class="btn1">Reproducir</button>
+                <button class="btn2">Seguir</button>
+                <i class="uil uil-ellipsis-h"></i>
+            </div>
+        </div>
+    </div>
+
+    <!-- <div class="resultados">
+        <h2>Resultados</h2>
+        <div class="resultado__img" >
+            <div class="album" *ngFor="let reciente of recientes" >
+                <img src="{{reciente.picture}}" alt="{{reciente.name}}">
+                <h3 class="album_name"> {{reciente.nb_album}} </h3>
+                <h3 class="album_artist">{{reciente.name}}</h3>
+            </div>
+            
+        </div>
+    </div> -->
+    <br><br>
+    <div class="row">
+        <div *ngFor="let reciente of recientes" 
+        class="col-md-3 col-sm-6">
+        <div class="card">
+            <div class="card-body">
+                <img src="{{reciente.picture_xl}}" alt="{{reciente.title}}" class="card-img-top">
+                <p class="card-text"> 
+                    Album: # {{reciente.nb_album}}
+                </p>
+                <p class="card-text"> 
+                    Nombre: {{reciente.name}}
+                </p>
+                
+                
+            </div>
+        </div>
+    </div>
+    </div>
+</div>
+
+

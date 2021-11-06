@@ -1,0 +1,27 @@
+
+li{
+    color: #fff;
+    cursor: pointer;
+    font-weight: 100;
+    font-size:var(--font-size-subtitle);
+    padding-left: 50px;
+    padding-top: 5px;
+  }
+  li:focus {
+    color: var(--color--boton);
+}
+
+  h3 {
+      padding-left: 50px;
+      padding-top: 20px;
+      color: #fff;
+  }
+
+  @media screen and (max-width: 400px) {
+    li{
+    padding-left: 10px;
+    }
+    h3{
+    padding-left: 10px;
+    }
+  }

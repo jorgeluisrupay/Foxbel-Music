@@ -1,0 +1,20 @@
+<div class="row">
+    <h2 class="titleP"> TOP PARA BAILAR </h2>
+
+    <div *ngFor="let salsa of salsas" 
+        class="col-md-3 col-sm-6">
+        <div class="card">
+            <div class="card-body">
+                <img src="{{salsa.picture_xl}}" alt="{{salsa.title}}" class="card-img-top">
+                <p class="card-text"> 
+                    Album: # {{salsa.nb_album}}
+                </p>
+                <p class="card-text"> 
+                    Nombre: {{salsa.name}}
+                </p>
+                
+                
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,21 @@
+<div class="row">
+
+    <h2 class="titleP"> TOP BALADAS </h2>
+
+    <div *ngFor="let balada of baladas" 
+        class="col-md-3 col-sm-6">
+        <div class="card">
+            <div class="card-body">
+                <img src="{{balada.picture_medium}}" alt="{{balada.title}}" class="card-img-top">
+                <p class="card-text"> 
+                    Album: # {{balada.nb_album}}
+                </p>
+                <p class="card-text"> 
+                    Nombre: {{balada.name}}
+                </p>
+                
+                
+            </div>
+        </div>
+    </div>
+</div>
