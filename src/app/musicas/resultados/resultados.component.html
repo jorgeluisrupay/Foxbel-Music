@@ -1,0 +1,21 @@
+
+
+<!-- <ul>
+    <li *ngFor="let musica of resultados">
+        {{musica.name}}
+    </li>
+</ul> -->
+
+<div class="row">
+    <div *ngFor="let musica of resultados" 
+        class="col-md-4 col-sm-6">
+        <div class="card">
+            <div class="card-body">
+                <p class="card-text"> 
+                    {{musica.name}}
+                    <img src="{{musica.picture_medium}}" alt="{{musica.title}}" class="card-img-top">
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
